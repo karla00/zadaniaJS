@@ -2,25 +2,28 @@
  * Created by Karolina on 2015-12-07.
  */
 
-
-
 var fooBar = function (x) {
+
+    var line = "";
 
     for (i = 1; i < x; i = i + 1) {
 
         if ((i % 3 === 0) && (i % 5 === 0)) {
-            console.log("FOOBAR");
+            line = line + "FOOBAR";
         }
         else if (i % 3 === 0) {
-            console.log("Foo");
+            line = line + "Foo";
         }
         else if (i % 5 === 0) {
-            console.log("Bar");
+            line = line + "Bar";
         }
-        else{
-            console.log(i);
+        else {
+            line = line + i;
         }
 
     }
-
+    return line;
 };
+
+fooBar(15);
+

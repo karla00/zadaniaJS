@@ -3,7 +3,6 @@
  */
 
 var obliczpi = function (n) {
-
     var ulamki = 0;
     var dodaj = true;
     for (i = 1; i <= n; i = i + 2) {
@@ -17,7 +16,8 @@ var obliczpi = function (n) {
         }
     }
     var pi = 4 * ulamki;
-
-    console.log("Nasza liczba PI : " + pi);
+    return pi;
 };
+//
 
+//
